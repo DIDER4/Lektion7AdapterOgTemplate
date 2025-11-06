@@ -1,4 +1,4 @@
-package play;
+package template.play;
 
 // Konkrete implementeringer af Game
 public class QuizGame extends Game {

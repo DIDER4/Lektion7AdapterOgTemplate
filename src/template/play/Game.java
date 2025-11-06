@@ -1,4 +1,4 @@
-package play;
+package template.play;
 // Abstrakt klasse Game
 public abstract class Game {
     // Template Method

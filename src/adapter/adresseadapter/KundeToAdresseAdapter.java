@@ -1,5 +1,5 @@
 
-package adresseadapter;
+package adapter.adresseadapter;
 
 public class KundeToAdresseAdapter implements Adresse {
 	private Kunde kunde;

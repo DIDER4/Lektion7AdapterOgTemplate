@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CopilotDiffPersistence">
+    <option name="pendingDiffs">
+      <map>
+        <entry key="$PROJECT_DIR$/../../../../../3. Semester/Avanceret progammering/IntelliJ projekter/Lektion7AdapterOgTemplate/src/adapter/spiritusadapter/Spiritus.java">
+          <value>
+            <PendingDiffInfo>
+              <option name="filePath" value="$PROJECT_DIR$/../../../../../3. Semester/Avanceret progammering/IntelliJ projekter/Lektion7AdapterOgTemplate/src/adapter/spiritusadapter/Spiritus.java" />
+              <option name="updatedContent" value="// ...existing code...&#10;    public Spiritus(int prisen, String betegnelse) {&#10;        super();&#10;        this.prisen = prisen;&#10;-        this.betegnelse = this.betegnelse;&#10;+        this.betegnelse = betegnelse;&#10;    }&#10;// ...existing code..." />
+            </PendingDiffInfo>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../../../3. Semester/Avanceret progammering/IntelliJ projekter/Lektion7AdapterOgTemplate/src/adapter/spiritusadapter/SpiritusAdapterTest.java">
+          <value>
+            <PendingDiffInfo>
+              <option name="filePath" value="$PROJECT_DIR$/../../../../../3. Semester/Avanceret progammering/IntelliJ projekter/Lektion7AdapterOgTemplate/src/adapter/spiritusadapter/SpiritusAdapterTest.java" />
+              <option name="updatedContent" value="// ...existing code...&#10;package adapter.spiritusadapter;&#10;&#10;import static org.junit.jupiter.api.Assertions.*;&#10;&#10;import org.junit.jupiter.api.Test;&#10;&#10;class SpiritusAdapterTest {&#10;&#10;    @Test&#10;    void getPris() {&#10;        Spiritus s = new Spiritus(100, &quot;Vodka&quot;);&#10;        SpiritusAdapter a = new SpiritusAdapter(s);&#10;        assertEquals(100, a.getPris());&#10;    }&#10;&#10;    @Test&#10;    void setPris() {&#10;        Spiritus s = new Spiritus(100, &quot;Vodka&quot;);&#10;        SpiritusAdapter a = new SpiritusAdapter(s);&#10;        a.setPris(150);&#10;        assertEquals(150, a.getPris());&#10;        // also ensure underlying object updated&#10;        assertEquals(150, s.getPrisen());&#10;    }&#10;&#10;    @Test&#10;    void getNavn() {&#10;        Spiritus s = new Spiritus(100, &quot;Vodka&quot;);&#10;        SpiritusAdapter a = new SpiritusAdapter(s);&#10;        assertEquals(&quot;Vodka&quot;, a.getNavn());&#10;    }&#10;&#10;    @Test&#10;    void setNavn() {&#10;        Spiritus s = new Spiritus(100, &quot;Vodka&quot;);&#10;        SpiritusAdapter a = new SpiritusAdapter(s);&#10;        a.setNavn(&quot;Gin&quot;);&#10;        assertEquals(&quot;Gin&quot;, a.getNavn());&#10;        // also ensure underlying object updated&#10;        assertEquals(&quot;Gin&quot;, s.getBetgenelse());&#10;    }&#10;&#10;    @Test&#10;    void beregnMoms() {&#10;        Spiritus s = new Spiritus(100, &quot;Vodka&quot;);&#10;        SpiritusAdapter a = new SpiritusAdapter(s);&#10;        assertEquals(25.0, a.beregnMoms(), 0.0001);&#10;    }&#10;}&#10;// ...existing code..." />
+            </PendingDiffInfo>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

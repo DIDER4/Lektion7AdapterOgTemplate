@@ -1,4 +1,4 @@
-package play;
+package template.play;
 
 import java.util.Scanner;
 

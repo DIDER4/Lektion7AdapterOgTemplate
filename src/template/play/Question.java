@@ -1,4 +1,4 @@
-package play;
+package template.play;
 
 // Abstrakt klasse Question
 public abstract class Question {

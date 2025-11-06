@@ -1,13 +1,13 @@
-package spiritusadapter;
+package adapter.spiritusadapter;
 
 public class Spiritus {
     private int prisen;
-    private String betgenelse;
+    private String betegnelse;
     
-    public Spiritus(int prisen, String betgenelse) {
+    public Spiritus(int prisen, String betegnelse) {
         super();
         this.prisen = prisen;
-        this.betgenelse = betgenelse;
+        this.betegnelse = betegnelse;
     }
     
     public int getPrisen() {
@@ -18,12 +18,12 @@ public class Spiritus {
         this.prisen = prisen;
     }
     
-    public String getBetgenelse() {
-        return betgenelse;
+    public String getBetegnelse() {
+        return betegnelse;
     }
     
-    public void setBetgenelse(String betgenelse) {
-        this.betgenelse = betgenelse;
+    public void setBetegnelse(String betegnelse) {
+        this.betegnelse = betegnelse;
     }
     
     public double hentMoms() {

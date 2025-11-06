@@ -1,5 +1,5 @@
 
-package adresseadapter;
+package adapter.adresseadapter;
 
 public interface Adresse {
 	public String getVejOgHusNr();

@@ -1,4 +1,4 @@
-package adresseadapter;
+package adapter.adresseadapter;
 
 public class TestAdapter {
 
